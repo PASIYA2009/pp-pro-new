@@ -1,0 +1,17 @@
+rules_version = '2';
+
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // Everyone can read papers.
+    match /papers/{paperId} {
+      allow read: if true;
+
+      // Only the single admin account can add/edit/delete.
+      // Change this email to the same ADMIN_EMAIL in firebase-config.js.
+      allow create, update, delete:
+        if request.auth != null
+        && request.auth.token.email == "YOUR_ADMIN_EMAIL";
+    }
+  }
+}
