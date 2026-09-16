@@ -297,7 +297,7 @@ button,.download-btn,.clear-btn{
 <div id="paperList"></div>
 </main>
 
-<footer>© <span id="footerYear"></span> PastPaper Pro</footer>
+<footer>© <span id="footerYear"></span> PastPaper Pro Pasidu Eshan</footer>
 
 <script type="module">
 import { initializeApp } from "https://www.gstatic.com/firebasejs/12.19.0/firebase-app.js";
@@ -395,7 +395,7 @@ loadPapers();
 
   const aExam=document.getElementById("aExam"),aStream=document.getElementById("aStream"),aStreamWrap=document.getElementById("aStreamWrap"),aSubject=document.getElementById("aSubject"),aYear=document.getElementById("aYear");
   const OL=["Mathematics","Science","English","Sinhala","History","Buddhism","Geography","Health","Art","Tamil","Civic Education","Business & Accounting Studies","ICT","Music","Dancing","Drama & Theatre","French","German","Japanese"];
-  const AL={Commerce:["Accounting","Business Studies","Economics","ICT"],Arts:["Sinhala","English","History","Geography","Political Science","Economics","Logic & Scientific Method","Buddhist Civilization","Greek & Roman Civilization","Dancing","Music","Art","Drama & Theatre","Tamil","French","German","Japanese"],Maths:["Combined Mathematics","Physics","Chemistry","ICT"],Science:["Biology","Chemistry","Physics","Combined Mathematics"],Technology:["Engineering Technology","Science for Technology","Bio Systems Technology","ICT"]};
+  const AL={Commerce:["Accounting","Business Studies","Economics","ICT"],Arts:["Sinhala","ICT","English","History","Geography","Political Science","Economics","Logic & Scientific Method","Buddhist Civilization","Greek & Roman Civilization","Dancing","Music","Art","Drama & Theatre","Tamil","French","German","Japanese"],Maths:["Combined Mathematics","Physics","Chemistry","ICT"],Science:["Biology","Chemistry","Physics","Combined Mathematics"],Technology:["Engineering Technology","Science for Technology","Bio Systems Technology","ICT"]};
   function updateAdminSubjects(){
     const ex=aExam.value; aStreamWrap.style.display=ex==="A/L"?"":"none";
     const arr=ex==="O/L"?OL:(aStream.value?AL[aStream.value]:[]);
