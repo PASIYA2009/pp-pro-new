@@ -11,7 +11,7 @@ service cloud.firestore {
       // Change this email to the same ADMIN_EMAIL in firebase-config.js.
       allow create, update, delete:
         if request.auth != null
-        && request.auth.token.email == "YOUR_ADMIN_EMAIL";
+        && request.auth.token.email == "eshandinujaya86@gmail.com";
     }
   }
 }
