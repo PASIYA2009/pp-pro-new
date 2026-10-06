@@ -11,4 +11,4 @@ export const firebaseConfig = {
 
 // Use the SAME email you create in Firebase Authentication.
 // Visitors never see this in the UI.
-export const ADMIN_EMAIL = "YOUR_ADMIN_EMAIL";
+export const ADMIN_EMAIL = "eshandinujaya86@gmail.com";
